@@ -11,7 +11,112 @@
     --azul-claro: #013a9c;
     --dorado: #F2B705;
     --dorado-oscuro: #C99A04;
+    --texto: #2B2F38;<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CÓNDOR — Preparación para el Concurso de Méritos Docente</title>
+<meta name="description" content="CÓNDOR: teoría, simulacros tipo examen y estadísticas de desempeño para preparar el Concurso de Méritos Docente en Colombia. Descarga gratis, con 1 hora de prueba." />
+<style>
+  :root{
+    --azul: #01286C;
+    --azul-claro: #013a9c;
+    --dorado: #F2B705;
+    --dorado-oscuro: #C99A04;
     --texto: #2B2F38;
+    --texto-suave: #6A7180;
+    --fondo: #F6F8FB;
+    --borde: #E1E5EA;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--texto);
+    background:linear-gradient(160deg, var(--azul) 0%, var(--azul-claro) 100%);
+    line-height:1.55;
+  }
+  a{color:inherit}
+  .contenedor{max-width:1080px;margin:0 auto;padding:0 24px}
+
+  /* --------- Hero --------- */
+  .hero{
+    min-height:100%;
+    display:flex;
+    align-items:center;
+    color:#fff;
+    padding:72px 24px 84px;
+    text-align:center;
+  }
+  .hero .contenedor{width:100%}
+  .hero h1{
+    font-size:clamp(28px,5vw,44px);
+    font-weight:800;
+    margin-bottom:16px;
+    letter-spacing:-0.5px;
+  }
+  .hero p.subtitulo{
+    font-size:clamp(15px,2vw,19px);
+    color:#CBDCF3;
+    max-width:640px;
+    margin:0 auto 36px;
+  }
+  .boton-descarga{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:var(--dorado);
+    color:#1a1400;
+    font-weight:800;
+    font-size:18px;
+    padding:18px 38px;
+    border-radius:12px;
+    text-decoration:none;
+    box-shadow:0 8px 24px rgba(0,0,0,0.25);
+    transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+  }
+  .boton-descarga:hover{
+    background:var(--dorado-oscuro);
+    transform:translateY(-2px);
+    box-shadow:0 12px 28px rgba(0,0,0,0.3);
+  }
+  .boton-descarga svg{flex-shrink:0}
+</style>
+</head>
+<body>
+
+  <!-- ======================= HERO ======================= -->
+  <section class="hero">
+    <div class="contenedor">
+      <h1>Prepárate para el Concurso de Méritos Docente</h1>
+      <p class="subtitulo">
+        Teoría, simulacros tipo examen y estadísticas de desempeño, en un solo programa
+        para Windows. Practica bajo condiciones similares a la prueba real y llega
+        con confianza al examen.
+      </p>
+
+      <!--
+        ══════════════════════════════════════════════════════════════════
+        ENLACE DE DESCARGA — edítalo aquí cuando cambie el repositorio o
+        el nombre del archivo del instalador. Ver GUIA-publicar-sitio.txt
+        para instrucciones completas.
+        ══════════════════════════════════════════════════════════════════
+      -->
+      <a class="boton-descarga"
+         href="https://github.com/CondorColombia/condorcolombia.github.io/releases/latest/download/CondorSetup.exe"
+         id="botonDescarga">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16" stroke="#1a1400" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Descargar CÓNDOR
+      </a>
+    </div>
+  </section>
+</body>
+</html>
+
     --texto-suave: #6A7180;
     --fondo: #F6F8FB;
     --borde: #E1E5EA;
